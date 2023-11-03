@@ -1,3 +1,5 @@
+/*Top header of the website*/
+
 header {
     background-color: #f1f1f1;
     padding: 20px 10px;
@@ -39,4 +41,58 @@ header {
 
 .dropdown-menu-option{
     margin-left: 10px;
+}
+
+/*Event cards*/
+
+.event-listing {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-image {
+    flex: 1;
+    max-width: 150px;
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+}
+
+.event-details {
+    flex: 3;
+    padding: 0 20px;
+}
+
+.event-details h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.event-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.save-button {
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the button round */
+}
+
+.full-heart::before {
+    content: "\2665"; /* A solid heart character */
 }
