@@ -3,6 +3,10 @@
 header {
   background-color: #f1f1f1;
   padding: 20px 10px;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  z-index: 1;
 }
 
 .top-header ul {
@@ -32,7 +36,7 @@ header {
   top: 100%;
   left: 0;
   background-color: #f1f1f1;
-  z-index: 1;
+  z-index: 2;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -97,6 +101,8 @@ header {
   content: "\2665"; /* A solid heart character */
 }
 
+/*Search card*/
+
 .filters {
   width: 100%;
   display: flex;
@@ -105,7 +111,7 @@ header {
 
 .card {
   width: 60%;
-  margin-top: 20px;
+  margin-top: 70px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -146,4 +152,10 @@ header {
 
 #dropdownMenu2 {
   width: 100%;
+}
+
+/*Liked events*/
+.liked-header{
+    margin-top: 70px;
+    margin-bottom: 10px;
 }
