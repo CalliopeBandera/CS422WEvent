@@ -4,8 +4,8 @@ header {
   background-color: #f1f1f1;
   padding: 20px 10px;
   position: fixed;
-  top: 0; 
-  width: 100%; 
+  top: 0;
+  width: 100%;
   z-index: 1;
 }
 
@@ -45,11 +45,6 @@ header {
 
 .dropdown-menu-option {
   margin-left: 10px;
-}
-
-.logo{
-    font-size: large;
-    font-weight: bold;
 }
 
 /*Event cards*/
@@ -116,7 +111,7 @@ header {
 
 .card {
   width: 60%;
-  margin-top: 75px;
+  margin-top: 70px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -145,6 +140,15 @@ header {
   margin-bottom: 20px;
 }
 
+.dropdown-item-location {
+  width: 100%;
+  text-align: left;
+}
+
+.checkbox-dropdown {
+  flex-direction: column;
+}
+
 #searchBar {
   width: 100%;
   margin: 0 0 10px 0;
@@ -160,7 +164,7 @@ header {
 }
 
 /*Liked events*/
-.liked-header{
-    margin-top: 70px;
-    margin-bottom: 10px;
+.liked-header {
+  margin-top: 70px;
+  margin-bottom: 10px;
 }

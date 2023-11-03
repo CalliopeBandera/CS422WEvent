@@ -27,6 +27,11 @@
       $(document).ready(function () {
         $(".dropdown-toggle").dropdown();
       });
+
+      function changeValue(buttonElement) {
+        document.getElementById("dropdownMenu1").innerHTML =
+          buttonElement.textContent;
+      }
     </script>
   </head>
   <body>
@@ -74,11 +79,39 @@
                   Enter Location
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <button class="dropdown-item" type="button">Chicago</button>
-                  <button class="dropdown-item" type="butthton">Dallas</button>
-                  <button class="dropdown-item" type="button">Miami</button>
-                  <button class="dropdown-item" type="button">New York</button>
-                  <button class="dropdown-item" type="button">
+                  <button
+                    class="btn dropdown-item-location"
+                    type="button"
+                    onclick="changeValue(this)"
+                  >
+                    Chicago
+                  </button>
+                  <button
+                    class="btn dropdown-item-location"
+                    type="button"
+                    onclick="changeValue(this)"
+                  >
+                    Dallas
+                  </button>
+                  <button
+                    class="btn dropdown-item-location"
+                    type="button"
+                    onclick="changeValue(this)"
+                  >
+                    Miami
+                  </button>
+                  <button
+                    class="btn dropdown-item-location"
+                    type="button"
+                    onclick="changeValue(this)"
+                  >
+                    New York
+                  </button>
+                  <button
+                    class="btn dropdown-item-location"
+                    type="button"
+                    onclick="changeValue(this)"
+                  >
                     Los Angeles
                   </button>
                 </div>
@@ -102,10 +135,36 @@
                   Type
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Art</button>
-                  <button class="dropdown-item" type="button">Music</button>
-                  <button class="dropdown-item" type="button">Sport</button>
-                  <button class="dropdown-item" type="button">Food</button>
+                  <form>
+                    <input
+                      type="checkbox"
+                      class="checkbox-dropdown"
+                      name="Art"
+                      value="Art"
+                    />
+                    <label for="vehicle1"> Art</label><br />
+                    <input
+                      type="checkbox"
+                      class="checkbox-dropdown"
+                      name="Music"
+                      value="Music"
+                    />
+                    <label for="vehicle2"> Music</label><br />
+                    <input
+                      type="checkbox"
+                      class="checkbox-dropdown"
+                      name="Sport"
+                      value="Sport"
+                    />
+                    <label for="vehicle3"> Sport</label><br />
+                    <input
+                      type="checkbox"
+                      class="checkbox-dropdown"
+                      name="Food"
+                      value="Food"
+                    />
+                    <label for="vehicle4"> Food</label>
+                  </form>
                 </div>
               </div>
             </div>
@@ -134,33 +193,33 @@
       </button>
     </div>
     <div class="event-listing pl-4">
-        <div class="event-image">
-          <img src="cupcakes.jpg" alt="Event Image" />
-        </div>
-        <div class="event-details">
-          <h2>Cupcake day festival</h2>
-          <p>Date: Friday, November 1, 2023</p>
-          <p>Location: Chicago, IL</p>
-          <p>Price: free</p>
-        </div>
-        <button class="save-button">
-          <span class="heart-icon">♡</span>
-        </button>
+      <div class="event-image">
+        <img src="cupcakes.jpg" alt="Event Image" />
       </div>
-      <div class="event-listing pl-4">
-        <div class="event-image">
-          <img src="cupcakes.jpg" alt="Event Image" />
-        </div>
-        <div class="event-details">
-          <h2>Cupcake day festival</h2>
-          <p>Date: Friday, November 1, 2023</p>
-          <p>Location: Chicago, IL</p>
-          <p>Price: free</p>
-        </div>
-        <button class="save-button">
-          <span class="heart-icon">♡</span>
-        </button>
+      <div class="event-details">
+        <h2>Cupcake day festival</h2>
+        <p>Date: Friday, November 1, 2023</p>
+        <p>Location: Chicago, IL</p>
+        <p>Price: free</p>
       </div>
+      <button class="save-button">
+        <span class="heart-icon">♡</span>
+      </button>
+    </div>
+    <div class="event-listing pl-4">
+      <div class="event-image">
+        <img src="cupcakes.jpg" alt="Event Image" />
+      </div>
+      <div class="event-details">
+        <h2>Cupcake day festival</h2>
+        <p>Date: Friday, November 1, 2023</p>
+        <p>Location: Chicago, IL</p>
+        <p>Price: free</p>
+      </div>
+      <button class="save-button">
+        <span class="heart-icon">♡</span>
+      </button>
+    </div>
 
     <!-- Add Bootstrap JS and jQuery scripts (optional) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
