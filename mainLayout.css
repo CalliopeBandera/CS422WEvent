@@ -3,25 +3,25 @@ header {
     padding: 20px 10px;
 }
 
-nav ul {
+.top-header ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-nav ul li {
+.top-header ul li {
     margin-right: 20px;
 }
 
-a {
+.header-link {
     text-decoration: none;
     color: #000;
 }
 
-a:hover {
+.header-link:hover {
     text-decoration: none;
-    color: #ff0000; /* Set the link color on hover to a different color, like red (#ff0000) */
+    color: #ff0000; 
 }
 
 .dropdown .dropdown-menu {
