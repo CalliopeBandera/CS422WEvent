@@ -9,6 +9,11 @@ header {
   z-index: 1;
 }
 
+.logo{
+  font-weight: bold;
+  font-size: large;
+}
+
 .top-header ul {
   list-style: none;
   padding: 0;
@@ -58,11 +63,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 170px;
 }
 
 .event-image {
   flex: 1;
-  max-width: 150px;
+  height: 160px;
+  width: 160px;
+  overflow: hidden;
 }
 
 .event-image img {
@@ -165,6 +173,12 @@ header {
 
 /*Liked events*/
 .liked-header {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+/*Results*/
+#results-header {
   margin-top: 70px;
   margin-bottom: 10px;
 }
