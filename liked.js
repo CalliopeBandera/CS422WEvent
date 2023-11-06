@@ -1,6 +1,46 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
     if (localStorage.getItem('savedEventIds')) {
         savedEventIds = JSON.parse(localStorage.getItem('savedEventIds'));
+    }
+
+    console.log(savedEventIds);
+    function createEventListing(eventId, eventName, date, location, price, image) {
+        return `
+          <div class="event-listing pl-4" data-event-id="${eventId}">
+            <div class="event-image">
+              <img src="images/${image}.jpg" alt="Event Image" />
+            </div>
+            <div class="event-details">
+              <h2>${eventName}</h2>
+              <p>Date: ${date}</p>
+              <p>Location: ${location}</p>
+              <p>Price: ${price}</p>
+            </div>
+            <button class="save-button">
+              <span class="heart-icon">♥</span>
+            </button>
+          </div>
+        `;
+    }
+    
+
+    var events = document.getElementById("liked-events");
+
+    for(var i=0; i<savedEventIds.length; i++){
+        if(savedEventIds[i] == 1){
+            events.innerHTML += createEventListing(1, "Cupcake Day Festival", "Friday, November 1, 2023", "Chicago, IL", "free", "cupcakes");
+        }
+        else if(savedEventIds[i] == 2){
+            events.innerHTML += createEventListing(2, "Fulton Market Food Festival", "Friday, November 1, 2023", "Fulton & Morgan St, Chicago, IL", "free", "fulton");
+        } else if (savedEventIds[i] == 3) {
+            events.innerHTML += createEventListing(3, "The Festival of Wood and Barrel Aged Beer", "Friday, November 1, 2023", "Chicago, IL", "$-$$", "beer");
+        } else if (savedEventIds[i] == 4) {
+            events.innerHTML += createEventListing(4, "Christmas Market", "Friday, November 10, 2023", "Chicago, IL", "$", "christmas");
+        } else if (savedEventIds[i] == 5) {
+            events.innerHTML += createEventListing(5, "Sushi and Sashimi Food festival", "Saturday, November 18, 2023", "Chicago, IL", "$$-$$$", "sushi");
+        }
     }
 
     const saveButtons = document.querySelectorAll('.save-button');
@@ -59,14 +99,4 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("results-header").innerText = category + " events";
     }
 });
-
-function resetSaved() {
-    savedEventIds = [];
-    localStorage.setItem('savedEventIds', JSON.stringify(savedEventIds));
-    console.log("IDS RESET");
-}
-function printSaved(){
-    localStorage.getItem('savedEventIds')
-    console.log(savedEventIds);
-}
 
