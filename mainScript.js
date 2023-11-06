@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     if (localStorage.getItem('savedEventIds')) {
         savedEventIds = JSON.parse(localStorage.getItem('savedEventIds'));
+    }else{
+        savedEventIds = [];
     }
 
     const saveButtons = document.querySelectorAll('.save-button');
