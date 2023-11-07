@@ -49,7 +49,7 @@ header {
 }
 
 .dropdown-menu-option {
-  margin-left: 10px;
+  margin: 10px 10px 15px;
 }
 
 /*Event cards*/
@@ -155,6 +155,7 @@ header {
 
 .checkbox-dropdown {
   flex-direction: column;
+  margin-left: 10px;
 }
 
 #searchBar {
@@ -170,6 +171,7 @@ header {
 #dropdownMenu2 {
   width: 100%;
 }
+
 
 /*Liked events*/
 .liked-header {
