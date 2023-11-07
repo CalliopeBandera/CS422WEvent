@@ -28,20 +28,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var events = document.getElementById("liked-events");
 
-    for(var i=0; i<savedEventIds.length; i++){
-        if(savedEventIds[i] == 1){
-            events.innerHTML += createEventListing(1, "Cupcake Day Festival", "Friday, November 1, 2023", "Chicago, IL", "free", "cupcakes");
-        }
-        else if(savedEventIds[i] == 2){
+    for (var i = 0; i < savedEventIds.length; i++) {
+        if (savedEventIds[i] == 1) {
+            events.innerHTML += createEventListing(1, "Cupcake Day Festival", "Friday, November 1, 2023", "Wacker Drive, Chicago, IL", "free", "cupcakes");
+        } else if (savedEventIds[i] == 2) {
             events.innerHTML += createEventListing(2, "Fulton Market Food Festival", "Friday, November 1, 2023", "Fulton & Morgan St, Chicago, IL", "free", "fulton");
         } else if (savedEventIds[i] == 3) {
-            events.innerHTML += createEventListing(3, "The Festival of Wood and Barrel Aged Beer", "Friday, November 1, 2023", "Chicago, IL", "$-$$", "beer");
+            events.innerHTML += createEventListing(3, "The Festival of Wood and Barrel Aged Beer", "Friday, November 1, 2023", "Michigan Avenue, Chicago, IL", "$-$$", "beer");
         } else if (savedEventIds[i] == 4) {
-            events.innerHTML += createEventListing(4, "Christmas Market", "Friday, November 10, 2023", "Chicago, IL", "$", "christmas");
+            events.innerHTML += createEventListing(4, "Christmas Market", "Friday, November 10, 2023", "State Street, Chicago, IL", "$", "christmas");
         } else if (savedEventIds[i] == 5) {
-            events.innerHTML += createEventListing(5, "Sushi and Sashimi Food festival", "Saturday, November 18, 2023", "Chicago, IL", "$$-$$$", "sushi");
+            events.innerHTML += createEventListing(5, "Sushi and Sashimi Food festival", "Saturday, November 18, 2023", "Lake Shore Drive, Chicago, IL", "$$-$$$", "sushi");
+        } else if (savedEventIds[i] == 6) {
+            events.innerHTML += createEventListing(6, "Rock Under the Stars Festival", "Wednesday, November 15, 2023", "LaSalle Street, Chicago, IL", "$", "rock");
+        } else if (savedEventIds[i] == 7) {
+            events.innerHTML += createEventListing(7, "International Food and Art Extravaganza", "Saturday, November 20, 2023", "Randolph Street, Chicago, IL", "$$", "foodart");
+        } else if (savedEventIds[i] == 8) {
+            events.innerHTML += createEventListing(8, "Winter Wonderland Gala", "Saturday, December 10, 2023", "Division Street, Chicago, IL", "$$$$", "wonderland");
         }
     }
+    
 
     const saveButtons = document.querySelectorAll('.save-button');
 
