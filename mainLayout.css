@@ -202,6 +202,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 170px;
+  border-radius: 25px;
 }
 
 .event-image {
@@ -209,6 +210,7 @@ header {
   height: 160px;
   width: 160px;
   overflow: hidden;
+  border-radius: 25px;
 }
 
 .event-image img {
