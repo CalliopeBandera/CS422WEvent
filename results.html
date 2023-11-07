@@ -3,6 +3,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to WEvent! A place to find your next event</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -62,13 +63,13 @@
           <a class="header-link" href="#">Explore</a>
           <ul class="dropdown-menu">
             <li class="dropdown-menu-option">
-              <a class="header-link" href="results.html?category=cheap">Cheap</a>
+              <a class="header-link" href="explore.html?category=cheap">Cheap</a>
             </li>
             <li class="dropdown-menu-option">
-              <a class="header-link" href="results.html?category=seasonal">Seasonal</a>
+              <a class="header-link" href="explore.html?category=seasonal">Seasonal</a>
             </li>
             <li class="dropdown-menu-option">
-              <a class="header-link" href="results.html?category=popular">Popular</a>
+              <a class="header-link" href="explore.html?category=popular">Popular</a>
             </li>
           </ul>
         </li>
@@ -146,7 +147,7 @@ for (i = 0; i < dropdown.length; i++) {
 </script>
 
 <!--event cards -->
-<h4 class="pl-2" id="results-header">Results:</h4>
+<h4 class="pl-2 title-with-sidenav" id="results-header">Results:</h4>
 
 <button class="sort-btn">Sort<i class="fa fa-caret-left"></i></button>
 <div class="sort-btn-container">
@@ -174,7 +175,7 @@ for (i = 0; i < dropdown.length; i++) {
   }
   </script>
 
-<div class="events">
+<div class="events-with-sidenav">
   <div class="event-listing pl-4" data-event-id="1">
     <div class="event-image">
       <img src="images/cupcakes.jpg" alt="Event Image" />
