@@ -36,7 +36,7 @@ header {
 
 .header-link:hover {
   text-decoration: none;
-  color: #ff0000;
+  color: #426c55;
 }
 
 .dropdown .dropdown-menu {
@@ -285,7 +285,7 @@ header {
 
 .search-container {
   justify-content: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .dropdown-item-location {
@@ -310,6 +310,12 @@ header {
 
 #dropdownMenu2 {
   width: 100%;
+  background-color: #426c55;
+}
+
+#dropdownMenu1{
+  width: 130px;
+  background-color: #426c55;
 }
 
 /*Liked events*/
@@ -340,7 +346,7 @@ header {
   align-items: center;
   margin-top: 70px;
   padding-top: 20px;
-  height: 800px;
+  height: 700px;
 }
 
 .imageContainer {
