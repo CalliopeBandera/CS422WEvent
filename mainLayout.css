@@ -10,12 +10,12 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
-  border: solid 1px;
 }
 
 .logo {
   font-weight: bold;
   font-size: large;
+  margin-left: 30px;
 }
 
 .top-header ul {
@@ -54,6 +54,10 @@ header {
 
 .dropdown-menu-option {
   margin: 10px 10px 15px;
+}
+
+.user-icon{
+  margin-right: 30px;
 }
 
 .title-with-sidenav,
@@ -194,8 +198,8 @@ header {
 
 .event-listing {
   border: 1px solid #e5bdd0;
-  margin: 10px;
-  padding: 10px;
+  /*margin: 10px;
+  padding: 10px;*/
   display: flex;
   background-color: #f7f7f7;
   display: flex;
@@ -328,8 +332,7 @@ header {
 
 /*Results*/
 #results-header {
-  margin-top: 70px;
-  margin-bottom: 10px;
+  margin-top: 100px;
 }
 
 #buttonSearch {
