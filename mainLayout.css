@@ -238,6 +238,7 @@ header {
 }
 
 .save-button {
+  margin-right: 10px;
   border: none;
   font-size: 20px;
   cursor: pointer;
