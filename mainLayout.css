@@ -1,6 +1,6 @@
 /*Top header of the website*/
 body {
-  font-family: "ABeeZee", sans-serif;
+  font-family: "ABeeZee", sans-serif !important;
 }
 
 header {
@@ -10,6 +10,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
+  font-family: "ABeeZee", sans-serif !important;
 }
 
 .logo {
