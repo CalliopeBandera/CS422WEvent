@@ -1,0 +1,145 @@
+header {
+    background-color: #e5bdd0;
+    padding: 20px 10px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    font-family: "ABeeZee", sans-serif !important;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: large;
+    margin-left: 30px;
+  }
+  
+  .top-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-header ul li {
+    margin-right: 20px;
+  }
+  
+  .header-link {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .header-link:hover {
+    text-decoration: none;
+    color: #426c55;
+  }
+  
+  .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    z-index: 2;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu-option {
+    margin: 10px 10px 15px;
+  }
+  
+  .user-icon{
+    margin-right: 30px;
+  }
+  
+  .title-with-sidenav,
+  .events-with-sidenav {
+    margin-left: 300px;
+    padding: 0px 10px;
+    margin-top: 67px;
+  }
+  
+  /* Fixed sidenav, full height */
+  .sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 0;
+    top: 69px;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border: solid 1px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a,
+  .dropdown-btn {
+    padding: 6px 8px 4px 14px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+  
+    background: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    padding-right: none;
+    padding-left: 2px;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover,
+  .dropdown-btn:hover {
+    color: red;
+  }
+
+.search-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.search-link:hover {
+    text-decoration: underline;
+}
+
+.search-link {
+    background-color: #4191e7;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px; 
+    margin-left: 20px;
+    display: inline-block; 
+}
+
+main *:focus {
+    outline: none;
+}
+
+
+.myClass{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.user-icon{
+    margin-right: 30px;
+  }
+.event-info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 80%; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
+}
