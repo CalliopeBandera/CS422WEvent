@@ -38,6 +38,25 @@
     <script>
       $(document).ready(function () {
         $(".dropdown-toggle").dropdown();
+
+        var clickableDivImages = document.getElementsByClassName("event-image");
+
+        Array.from(clickableDivImages).forEach((div) => {
+          div.addEventListener("click", function () {
+            var id = $(this).parent().attr("data-event-id");
+            window.location = "Event_details.html?id=" + id;
+          });
+        });
+
+        var clickableDivDetails =
+          document.getElementsByClassName("event-details");
+
+        Array.from(clickableDivDetails).forEach((div) => {
+          div.addEventListener("click", function () {
+            var id = $(this).parent().attr("data-event-id");
+            window.location = "Event_details.html?id=" + id;
+          });
+        });
       });
 
       function changeValue(buttonElement) {

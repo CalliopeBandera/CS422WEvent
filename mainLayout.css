@@ -58,7 +58,7 @@ header {
   margin: 10px 10px 15px;
 }
 
-.user-icon{
+.user-icon {
   margin-right: 30px;
 }
 
@@ -322,7 +322,7 @@ header {
   background-color: #426c55;
 }
 
-#dropdownMenu1{
+#dropdownMenu1 {
   width: 130px;
   background-color: #426c55;
 }
@@ -368,4 +368,23 @@ header {
   top: 100px;
   left: 5%;
   z-index: -1;
+}
+
+.search-button {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.event-details {
+  text-align: left !important;
+}
+
+.event-image-details #eventImage {
+  margin-top: 220px !important;
+  max-height: 600px !important;
+}
+
+#eventDescription {
+  margin-top: 660px;
+  margin-bottom: 20px;
 }

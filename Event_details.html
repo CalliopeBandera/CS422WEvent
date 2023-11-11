@@ -1,86 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to WEvent! A place to find your next event</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="mainLayout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Example</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="mainLayout_ed.css" />
-</head>
-
-<body>
-    <header>
-        <nav class="top-header d-flex justify-content-between align-items-center">
-          <ul class="d-flex list-unstyled">
-            <li><a href="index.html" class="logo header-link">WEvent</a></li>
-            <li class="dropdown">
-              <a class="header-link" href="#">Explore</a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-menu-option">
-                  <a class="header-link" href="results.html?category=cheap"
-                    >Cheap</a
-                  >
-                </li>
-                <li class="dropdown-menu-option">
-                  <a class="header-link" href="results.html?category=seasonal"
-                    >Seasonal</a
-                  >
-                </li>
-                <li class="dropdown-menu-option">
-                  <a class="header-link" href="results.html?category=popular"
-                    >Popular</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li><a class="header-link" href="liked.html">Liked Events</a></li>
-          </ul>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="1em"
-            viewBox="0 0 448 512"
-            class="user-icon"
-          >
-            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path
-              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
-            />
-          </svg>
-        </nav>
-      </header>
-      <a href="results.html">
-      <button class="search-button">&lt; Search</button> <!-- Search button under the header -->
-    </a>
-
-    <main>
-       <div class="myClass" id="eventDetails">
-        <img src=""id="eventImage">
-        <h2>id="eventName" <span class="heart-icon float-right">♡</span></h2>
-        <p>id="eventDescription"</p>
-    
-    <div class="event-info">
-
-      <div class="box"><p>id="eventDate"</p></div>
-      <div class="box"><p>id="eventLocation"</p></div>
-      <div class="box"><p>id="eventCost"</p></div>
-    </div>
-       </div>
-    </main>
-    
-    <footer>
-        <!-- Your footer content goes here -->
-    </footer>
-
-    <!-- JavaScript libraries -->
-    <script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="event_details.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
 
-    <!-- Your custom JavaScript file -->
-    <script src="mainScript.js"></script>
-</body>
+  <body>
+    <header>
+      <nav class="top-header d-flex justify-content-between align-items-center">
+        <ul class="d-flex list-unstyled">
+          <li><a href="index.html" class="logo header-link">WEvent</a></li>
+          <li class="dropdown">
+            <a class="header-link" href="#">Explore</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-menu-option">
+                <a class="header-link" href="results.html?category=cheap"
+                  >Cheap</a
+                >
+              </li>
+              <li class="dropdown-menu-option">
+                <a class="header-link" href="results.html?category=seasonal"
+                  >Seasonal</a
+                >
+              </li>
+              <li class="dropdown-menu-option">
+                <a class="header-link" href="results.html?category=popular"
+                  >Popular</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a class="header-link" href="liked.html">Liked Events</a></li>
+        </ul>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 448 512"
+          class="user-icon"
+        >
+          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+          />
+        </svg>
+      </nav>
+    </header>
+    <a href="results.html">
+      <button class="search-button">&lt; Search</button>
+      <!-- Search button under the header -->
+    </a>
 
+    <main id="event-place"></main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
